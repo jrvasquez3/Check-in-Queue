@@ -1,6 +1,35 @@
-    .container {
+    .container { 
         display:grid;
         height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* --------Navigator Bar Settings---------- */
+
+    .nav {
+        background-color: rgb(104, 16, 8);
+        grid-column: 1/6;
+    }
+    li {
+        display: inline;
+        float: left;   
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px 25px;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 120%;
+    }
+    li a:hover {
+        background-color: #111;
+    }
+
+    /* ---------------- Main ---------------- */
+    main {
+        background-color: gray;
+        grid-column: 1/6;
     }
